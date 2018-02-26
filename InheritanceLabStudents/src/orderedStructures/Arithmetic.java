@@ -22,4 +22,12 @@ public class Arithmetic extends Progression {
 		return r;
 		
 	}
+	@Override
+	public double getTerm(int n) throws IndexOutOfBoundsException { 
+		if (n <= 0) 
+			throw new IndexOutOfBoundsException("printAllTerms: Invalid argument value = " + n); 
+
+		double value = this.firstValue() + (n-1)* commonDifference;
+		return value; 
+	}
 }
