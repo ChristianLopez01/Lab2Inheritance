@@ -10,6 +10,10 @@ public class Arithmetic extends Progression {
 	
 	@Override
 	public double nextValue() {
+		if(!firstvaluetest)
+		
+			throw new IllegalStateException("First value hasnt been called.");
+		
 		current = current + commonDifference; 
 		return current;
 	}

@@ -14,6 +14,10 @@ public class Fibonacci extends Progression {
 
 	@Override
 	public double nextValue() {
+		if(!firstvaluetest)
+		
+			throw new IllegalStateException("First value hasnt been called.");
+		
 			double temporal = current;
 			current = prev + current;
 			prev = temporal;
