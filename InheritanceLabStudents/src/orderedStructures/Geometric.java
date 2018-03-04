@@ -35,4 +35,11 @@ public class Geometric extends Progression {
 		double value = this.firstValue() + (n-1)* commonFactor;
 		return value; 
 	}
+	@Override
+	public boolean equals(Progression o) {
+		if(this.toString().equals(o.toString())) {
+			return true;
+		}
+		return false;
+	}
 }

@@ -42,5 +42,10 @@ public abstract class Progression implements OrderedNumberStructure {
 		return value; 
 	}
 	
-	public abstract double nextValue(); 
+	public abstract double nextValue();
+
+	public boolean equals(Progression o) {
+		// TODO Auto-generated method stub
+		return false;
+	} 
 }

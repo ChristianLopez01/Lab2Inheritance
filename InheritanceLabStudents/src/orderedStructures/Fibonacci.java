@@ -31,5 +31,11 @@ public class Fibonacci extends Progression {
 		prev = 0; 
 		return value; 
 	}
-
+	@Override
+	public boolean equals(Progression o) {
+		if(this.toString().equals(o.toString())) {
+			return true;
+		}
+		return false;
+	}
 }
